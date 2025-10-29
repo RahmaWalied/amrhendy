@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Amr Hendy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- AOS animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Fancybox (for image popup) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    /* ===== Gallery Page ===== */
+    .gallery-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+      url(../images/slider1.jpg) center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px 80px;
+    }
+
+    .gallery-header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--main-color);
+      letter-spacing: 2px;
+    }
+
+    .gallery-header p {
+      font-size: 18px;
+      color: #eee;
+      margin-top: 15px;
+    }
+
+    .gallery-section {
+      padding: 80px 0;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 20px;
+      transition: opacity 0.4s ease;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+<!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn ms-3 lang-btn">Arabic</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <header class="gallery-header">
+    <h1 data-aos="fade-up">Our Gallery</h1>
+    <p data-aos="fade-up" data-aos-delay="200">A glimpse into our creative wall designs and interior masterpieces</p>
+  </header>
+
+  <!-- ===== Gallery Section ===== -->
+<section class="gallery-section py-5" data-aos="fade-up">
+  <div class="container">
+    <!-- Gallery Grid -->
+    <div class="row g-4">
+      <!-- Gallery Item -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a data-fancybox="gallery" href="images/g1.jpg">
+          <div class="gallery-item">
+            <img src="images/g1.jpg" alt="Project 1" class="img-fluid">
+            <div class="overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a data-fancybox="gallery" href="images/g2.jpg">
+          <div class="gallery-item">
+            <img src="images/g2.jpg" alt="Project 2" class="img-fluid">
+            <div class="overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a data-fancybox="gallery" href="images/g3.jpg">
+          <div class="gallery-item">
+            <img src="images/g3.jpg" alt="Project 3" class="img-fluid">
+            <div class="overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a data-fancybox="gallery" href="images/g4.jpg">
+          <div class="gallery-item">
+            <img src="images/g4.jpg" alt="Project 4" class="img-fluid">
+            <div class="overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a data-fancybox="gallery" href="images/g5.jpg">
+          <div class="gallery-item">
+            <img src="images/g5.jpg" alt="Project 5" class="img-fluid">
+            <div class="overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <a data-fancybox="gallery" href="images/g6.jpg">
+          <div class="gallery-item">
+            <img src="images/g6.jpg" alt="Project 6" class="img-fluid">
+            <div class="overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer text-center">
+    <div class="container">
+      <img src="images/logo.png" alt="Logo" class="footer-logo mb-4">
+      <ul class="footer-links list-unstyled d-flex justify-content-center flex-wrap mb-4">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-icons mb-4">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2025 <span class="text-main fw-bold">Amr Hendy</span>. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init({ duration: 2000, once: true });
+    Fancybox.bind("[data-fancybox]", { Thumbs: false });
+  </script>
+</body>
+</html>

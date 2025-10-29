@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Amr Hendy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- AOS animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    /* ===== Services Page Custom Style ===== */
+    .services-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/slider1.jpg) center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px 80px;
+    }
+
+    .services-header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--main-color);
+      letter-spacing: 2px;
+    }
+
+    .services-header p {
+      font-size: 18px;
+      color: #eee;
+      margin-top: 15px;
+    }
+
+    .services-section {
+      padding: 80px 0;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      padding: 40px 25px;
+      text-align: center;
+      transition: all 0.4s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .service-card i {
+      font-size: 50px;
+      color: var(--main-color);
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover i {
+      transform: scale(1.2);
+    }
+
+    .service-card h4 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .service-card p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    .cta-section {
+      background: var(--main-color);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+      border-radius: 0;
+    }
+
+    .cta-section h2 {
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .cta-section p {
+      margin-bottom: 30px;
+      font-size: 17px;
+    }
+
+    .cta-section a.btn {
+      background: #fff;
+      color: var(--main-color);
+      font-weight: 700;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .cta-section a.btn:hover {
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+<!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn ms-3 lang-btn">Arabic</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <header class="services-header">
+    <h1 data-aos="fade-up">Our Services</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Discover what makes our work stand out with creativity and precision</p>
+  </header>
+
+  <!-- ===== Services Cards ===== -->
+  <section class="services-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+          <div class="service-card">
+            <i class="fa-solid fa-paint-roller"></i>
+            <h4>Wall Painting</h4>
+            <p>Professional decorative wall paint designs that elevate your space with elegance and harmony.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+          <div class="service-card">
+            <i class="fa-solid fa-brush"></i>
+            <h4>Texture Effects</h4>
+            <p>Creative textured finishes that give your walls depth, character, and a unique artistic touch.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-card">
+            <i class="fa-solid fa-swatchbook"></i>
+            <h4>Color Consultation</h4>
+            <p>Helping you choose the perfect color palette to complement your style and environment.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+          <div class="service-card">
+            <i class="fa-solid fa-ruler-combined"></i>
+            <h4>Custom Designs</h4>
+            <p>Tailored wall designs that reflect your personality and match your interior perfectly.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+          <div class="service-card">
+            <i class="fa-solid fa-house-chimney"></i>
+            <h4>Interior Finishing</h4>
+            <p>Complete finishing solutions that make your home stylish, modern, and comfortable.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-card">
+            <i class="fa-solid fa-image"></i>
+            <h4>3D Wall Art</h4>
+            <p>Stunning 3D designs that transform plain walls into captivating works of art.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Footer ===== -->
+  <footer class="footer text-center">
+    <div class="container">
+      <img src="images/logo.png" alt="Logo" class="footer-logo mb-4">
+      <ul class="footer-links list-unstyled d-flex justify-content-center flex-wrap mb-4">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-icons mb-4">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2025 <span class="text-main fw-bold">Amr Hendy</span>. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init({ duration: 2000, once: true });
+  </script>
+</body>
+</html>

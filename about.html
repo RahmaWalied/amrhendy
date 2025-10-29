@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Amr Hendy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- AOS animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <style>
+    /* ===== About Page Custom Style ===== */
+    .about-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/slider1.jpg) center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px 80px;
+    }
+
+    .about-header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--main-color);
+      letter-spacing: 2px;
+    }
+
+    .about-header p {
+      font-size: 18px;
+      color: #eee;
+      margin-top: 15px;
+    }
+
+    .about-section {
+      padding: 80px 0;
+      background-color: #f9f9f9;
+    }
+
+.about-section img {
+  width: 80%; /* 👈 بدل 100% */
+  max-width: 400px; /* 👈 علشان متكبرش عن كده */
+  display: block;
+  margin: 0 auto; /* توسيط الصورة */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+
+    .about-section img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-text h2 {
+      color: var(--main-color);
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    .about-stats {
+      background: var(--main-color);
+      color: #fff;
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .about-stats .col-md-3 h3 {
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .about-stats .col-md-3 p {
+      font-size: 16px;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn ms-3 lang-btn">Arabic</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <header class="about-header">
+    <h1 data-aos="fade-up">About Us</h1>
+    <p data-aos="fade-up" data-aos-delay="200">We bring creativity, quality, and perfection to every project we deliver.</p>
+  </header>
+
+  <!-- ===== About Content ===== -->
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 text-center" data-aos="fade-right">
+        <img src="images/about.jpg" alt="About Image" class="about-img img-fluid rounded-4 shadow">
+      </div>
+      <div class="col-lg-6 about-text" data-aos="fade-left">
+        <h2 class="fw-bold mb-4" style="color: var(--main-color);">Who We Are?</h2>
+        <p>
+          At <strong>Amr Hendy Designs</strong>, we believe that every wall tells a story.
+          Our team specializes in delivering high-quality painting, texture effects,
+          and artistic designs that turn ordinary spaces into extraordinary experiences.
+        </p>
+        <p>
+          With years of expertise and a passion for detail, we combine craftsmanship
+          and innovation to create designs that reflect beauty, harmony, and individuality.
+        </p>
+        <p>
+          From concept to execution, we ensure every project exceeds expectations — because
+          your home deserves the best.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer text-center">
+    <div class="container">
+      <img src="images/logo.png" alt="Logo" class="footer-logo mb-4">
+      <ul class="footer-links list-unstyled d-flex justify-content-center flex-wrap mb-4">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-icons mb-4">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2025 <span class="text-main fw-bold">Amr Hendy</span>. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init({ duration: 2000, once: true });
+  </script>
+</body>
+</html>
