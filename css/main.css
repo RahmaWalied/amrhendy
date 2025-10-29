@@ -358,7 +358,7 @@ section.active.contact { animation: floatX 6s ease-in-out infinite; }
 }
 
 .style {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/contact.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/contact.jpg);
   background-position: center;
   background-size: cover;
   padding: 70px 40px;
