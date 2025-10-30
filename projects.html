@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Amr Hendy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- AOS animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    /* ===== Projects Page ===== */
+    .projects-header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url(images/slider1.jpg) center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px 80px;
+    }
+
+    .projects-header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--main-color);
+      letter-spacing: 2px;
+    }
+
+    .projects-header p {
+      font-size: 18px;
+      color: #eee;
+      margin-top: 15px;
+    }
+
+    .projects-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .project-card {
+      border-radius: 20px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+      height: 300px;
+    }
+
+    .project-card video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .carousel-indicators {
+      position: static;
+      margin-top: 30px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: var(--main-color);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button class="btn ms-3 lang-btn">Arabic</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <header class="projects-header">
+    <h1 data-aos="fade-up">Our Projects</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Some of our best work crafted with passion and precision.</p>
+  </header>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects-section" data-aos="fade-up">
+    <div class="container">
+      <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
+                <video class="img-fluid rounded-4" controls muted>
+                  <source src="images/p1.mp4" type="video/mp4">
+                </video>
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                  <h5 class="text-white fw-bold">Modern Interior</h5>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
+                <video class="img-fluid rounded-4" controls muted>
+                  <source src="images/p2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 d-md-none d-lg-block">
+              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
+                <video class="img-fluid rounded-4" controls muted>
+                  <source src="images/p3.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
+                <video class="img-fluid rounded-4" controls muted>
+                  <source src="images/p4.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
+                <video class="img-fluid rounded-4" controls muted>
+                  <source src="images/p5.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 d-md-none d-lg-block">
+              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
+                <video class="img-fluid rounded-4" controls muted>
+                  <source src="images/p6.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer text-center">
+    <div class="container">
+      <img src="images/logo.png" alt="Logo" class="footer-logo mb-4">
+      <ul class="footer-links list-unstyled d-flex justify-content-center flex-wrap mb-4">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-icons mb-4">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2025 <span class="text-main fw-bold">Amr Hendy</span>. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init({ duration: 2000, once: true });
+  </script>
+</body>
+</html>
