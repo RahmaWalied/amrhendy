@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- font head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+<!-- font body -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
   <!-- AOS animation link -->
@@ -37,8 +41,7 @@
           <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
 
@@ -81,27 +84,26 @@
       <!-- image -->
       <div class="col-lg-5 col-md-6 mb-4 mb-md-0 reveal">
         <div class="about-img text-center">
-          <img src="images/about.jpg" alt="Amr Hendy" class="img-fluid rounded-3 shadow-lg w-75">
+          <img src="images/about.jpg" alt="Amr Hendy" class=" rounded-3 shadow-lg w-75">
         </div>
       </div>
 
       <!-- text -->
       <div class="col-lg-7 col-md-6 reveal">
-        <div class="about-text">
-          <h2 class="fw-bold mb-4 text-main">About Us</h2>
-          <h4 class="fw-semibold mb-3">I'm <span class="text-main">Amr Hendy</span></h4>
-          <p class="text-muted mb-3">
-            A designer specializing in innovative paint techniques, creative effects and expert color application.
-          </p>
-          <p class="text-muted mb-3">
-            I use only the finest global and local materials to ensure top-quality results.
-          </p>
-          <p class="text-muted">
-            Since founding my company in 1997, I've been driven by the belief that paint is an art form
-            and that its professional application can revolutionize interior design both in Egypt and around the world.
-          </p>
-          <a href="#gallery" class="btn btn-main mt-4 px-4 py-2">View My Work</a>
-        </div>
+<div class="about-text">
+  <h2 class="fw-bold mb-4 text-main">About Us</h2>
+  <p class="text-muted mb-3">
+    Specializing in modern decorative painting and creative wall finishes, we aim to blend art and design to create spaces that reflect beauty and character.
+  </p>
+  <p class="text-muted mb-3">
+    With years of experience in the field, our work focuses on precision, quality, and a unique artistic vision that brings every wall to life.
+  </p>
+  <p class="text-muted">
+    Each project is crafted with attention to detail, using the finest materials and techniques to deliver exceptional results that exceed expectations.
+  </p>
+  <a href="#gallery" class="btn btn-main mt-4 px-4 py-2">View My Work</a>
+</div>
+
       </div>
 
     </div>
@@ -158,99 +160,13 @@
   </div>
 </section>
 
-<!-- Projects section -->
- <section class="projects-section py-5" id="projects">
-  <div class="container text-center" data-aos="fade-up">
-      <h2 class="fw-bold mb-5">Our <span class="text-main">Projects</span></h2>
-    <p class="text-muted mb-5">Some of our best work crafted with passion and precision.</p>
-
-    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
-      
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"></button>
-      </div>
-
-      <!-- Slides -->
-      <div class="carousel-inner">
-        
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
-                <video class="img-fluid rounded-4" controls muted>
-                  <source src="images/p1.mp4" type="video/mp4">
-                </video>
-                <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
-                  <h5 class="text-white fw-bold">Modern Interior</h5>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
-                <video class="img-fluid rounded-4" controls muted>
-                  <source src="images/p2.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            
-            <div class="col-lg-4 d-md-none d-lg-block">
-              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
-                <video class="img-fluid rounded-4" controls muted>
-                  <source src="images/p3.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
-                <video class="img-fluid rounded-4" controls muted>
-                  <source src="images/p4.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            
-            <div class="col-lg-4 col-md-6">
-              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
-                <video class="img-fluid rounded-4" controls muted>
-                  <source src="images/p5.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            
-            <div class="col-lg-4 d-md-none d-lg-block">
-              <div class="project-card position-relative overflow-hidden rounded-4 shadow">
-                <video class="img-fluid rounded-4" controls muted>
-                  <source src="images/p6.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-<div class="text-end">
-  <button class="btn btn-main mt-3">Show More</button>
-</div>
-
-  </div>
-</section>
 
 <!-- gallery section -->
 <section class="gallery py-5" id="gallery" data-aos="fade-up">
   <div class="container">
     <!-- Section Title -->
     <div class="title text-center mb-5">
-       <h2 class="fw-bold mb-5">Our <span class="text-main">Gallery</span></h2>
+       <h2 class="fw-bold mb-5">Our <span class="text-main">Projects</span></h2>
       <p class="text-muted">Discover our latest paint projects and interior transformations</p>
     </div>
 
@@ -330,105 +246,140 @@
 <section class="contact py-5" id="contact" data-aos="fade-right">
   <div class="container">
     <div class="title text-center mb-5">
-      <h3 class="fw-bold text-main">Contact Us</h3>
+      <h3 class="fw-bold text-white">Contact Us</h3>
     </div>
 
-    <div class="style">
-      <div class="row text-center">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="inner d-flex justify-content-center align-items-center flex-column">
-            <div class="circule">
-              <i class="fa-solid fa-location-arrow"></i>
-            </div>
-            <h6>Address</h6>
-            <a href="http://maps.google.com/?q=30.017788%2C31.516169" class="text-white">View Location</a>
+    <div class="row g-4 align-items-stretch">
+
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="contact-form h-100 d-flex flex-column justify-content-center">
+          <div class="row g-3">
+                <div class="row text-center mt-5 ">
+      <div class="col-lg-4 col-md-6">
+        <div class="inner d-flex justify-content-center align-items-center flex-column">
+          <div class="circule">
+            <i class="fa-solid fa-location-arrow"></i>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="inner d-flex justify-content-center align-items-center flex-column">
-            <div class="circule">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <h6>Email</h6>
-            <p>amrhendy@gmail.com</p>
+      <div class="col-lg-4 col-md-6 ">
+        <div class="inner d-flex justify-content-center align-items-center flex-column">
+          <div class="circule">
+            <i class="fa-solid fa-envelope"></i>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="inner d-flex justify-content-center align-items-center flex-column">
-            <div class="circule">
-              <i class="fa-solid fa-phone"></i>
+      <div class="col-lg-4 col-md-6 ">
+        <div class="inner d-flex justify-content-center align-items-center flex-column">
+          <div class="circule">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+            <div class="col-md-6">
+              <input type="text" name="name" id="name" placeholder="Name" class="form-control shadow-sm">
             </div>
-            <h6>Phone</h6>
-            <a href="tel:+201222202931" class="text-white">Call Us</a>
+            <div class="col-md-6">
+              <input type="email" name="email" id="email" placeholder="Email" class="form-control shadow-sm">
+            </div>
+            <div class="col-12">
+              <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-control shadow-sm">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" placeholder="Message" rows="5" class="form-control shadow-sm"></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn-main mt-3 px-5 py-2">Send Message</button>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Google Map -->
-      <div class="map text-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3454.664518429393!2d31.513594075552735!3d30.017787974937047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDAxJzA0LjAiTiAzMcKwMzAnNTguMiJF!5e0!3m2!1sen!2seg!4v1761640771975!5m2!1sen!2seg"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <div class="col-lg-6">
+        <div class="map h-100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3454.664518429393!2d31.513594075552735!3d30.017787974937047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDAxJzA0LjAiTiAzMcKwMzAnNTguMiJF!5e0!3m2!1sen!2seg!4v1761640771975!5m2!1sen!2seg"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
 
-      <!-- Contact Form -->
-      <form class="mt-5">
-        <div class="row g-3">
-          <div class="col-md-4">
-            <input type="text" name="name" id="name" placeholder="Name" class="form-control">
-          </div>
-          <div class="col-md-4">
-            <input type="email" name="email" id="email" placeholder="Email" class="form-control">
-          </div>
-          <div class="col-md-4">
-            <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-control">
-          </div>
-          <div class="col-12">
-            <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
-          </div>
-          <div class="col-12 text-center">
-            <button type="submit" class="btn-main mt-3 px-5 py-2">Submit</button>
-          </div>
-        </div>
-      </form>
     </div>
+
   </div>
 </section>
 
+
 </main>
 <!-- footer -->
-<footer class="footer text-center">
+
+<footer class="footer py-5 text-center text-lg-start">
   <div class="container">
-    <!-- Logo -->
-    <img src="images/logo.png" alt="Logo" class="footer-logo mb-4">
+    <div class="row g-4 align-items-start">
 
-    <!-- Navigation Links -->
-    <ul class="footer-links list-unstyled d-flex justify-content-center flex-wrap mb-4">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-about">
+          <img src="images/logo.png" alt="Logo" class="img-fluid mb-3 w-50">
+          <p>
+            Creative painting and interior design with a modern artistic touch.
+          </p>
+              <ul class="social-icons list-unstyled d-flex justify-content-center justify-content-lg-start gap-3 mt-4 text-center">
+      <li><a href="#"><i class="fab fa-twitter text-white"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f text-white"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram text-white"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in text-white"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+<div class="col-lg-4 col-md-6">
+  <div class="footer-links text-center text-lg-start">
+    <h5 class="fw-bold mb-3">Quick Links</h5>
+    <ul class="list-unstyled d-flex flex-column ps-2 justify-content-center justify-content-lg-start gap-3">
+      <li><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+      <li><a href="about.html" class="text-decoration-none text-white">About</a></li>
+      <li><a href="services.html" class="text-decoration-none text-white">Services</a></li>
+      <li><a href="gallery.html" class="text-decoration-none text-white">Projects</a></li>
+      <li><a href="contact.html" class="text-decoration-none text-white">Contact</a></li>
     </ul>
+    
 
-    <!-- Social Media Icons -->
-    <div class="social-icons mb-4">
-      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  </div>
+</div>
+
+
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-12">
+        <div class="footer-contact">
+          <h5 class="fw-bold mb-3">Get in Touch</h5>
+          <div class="general-icons d-flex flex-column align-items-center align-items-lg-start">
+            <p><i class="fa-solid fa-location-dot me-2 fs-5 text-main"></i> A108 Adam Street, New York, NY 535022</p>
+            <p><i class="fa-solid fa-envelope me-2 fs-5 text-main"></i> contact@example.com</p>
+            <p><i class="fa-solid fa-phone me-2 fs-5 text-main"></i> +1 5589 55488 55</p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
-    <!-- Copyright -->
-    <p class="mb-0">© 2025 <span class="text-main fw-bold">Amr Hendy</span>. All Rights Reserved.</p>
+    <hr class="my-4 text-white opacity-25">
+    <p class="mb-0 small text-center">© 2025 <span class="text-main fw-bold">Amr Hendy</span>. All Rights Reserved.</p>
   </div>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
