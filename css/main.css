@@ -469,7 +469,7 @@ section.active.contact { animation: floatX 6s ease-in-out infinite; }
 /* Map Styling */
 .map iframe {
   border-radius: 15px;
-  min-height: 400px;
+  min-height: 350px;
   filter: grayscale(20%) brightness(95%);
   transition: 0.3s ease;
 }
